@@ -1,0 +1,1 @@
+__auto_poetry_env
