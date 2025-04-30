@@ -157,7 +157,7 @@ function __auto_poetry_env --on-event fish_prompt
         # echo "DEBUG: Activation condition met. Attempting activation for $project_root" # Optional
         # Get the expected venv path for this specific project
         # echo "DEBUG: Running 'poetry env info --path' in $project_root" # Optional
-        set -l expected_venv_path (cd "$project_root"; poetry env info --path 2>/dev/null)
+        set -l expected_venv_path (poetry env info --path 2>/dev/null)
         set -l poetry_status $status
         # echo "DEBUG: 'poetry env info --path' status: $poetry_status, path: '$expected_venv_path'" # Optional
 
